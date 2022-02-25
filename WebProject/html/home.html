@@ -41,53 +41,81 @@ if(isset($_SESSION['id']) && isset($_SESSION['user_name'])){
          
          <main role="main">
                   <h1>Hello, <?php echo $_SESSION['user_name'];?><a href="logout.php">Logout</a></h1>
-            <article class="article-featured">
+           <script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+		  
+		
+
+
+
+		   <article class="article-featured">
                <h2 class="article-title">Finding simplicity in life</h2>
                <img src="img/life.jpg" alt="greenery pic" class="article-image">
-               <p class="article-info">July 23, 2019 | 3 comments</p>
-               <p class="article-body">Life can get complicated really quickly, but it doesn't have to be! There are many ways to simplify your life, a few of which we've explored in the past. This week we're taking a bit of a approach through, in how you can find simplicity in the life you already leaving.</p>
-               <a href="#" class="article-read-more">CONTINUE READING</a>
+              
+               <p>Are you looking for more simplicity in life? Here are 20 of my favourite minimalist living tips that will help you get started.<span id="dots">
+               ..</span><span id="more">These days, it feels like more people than ever are interested in slowing down, simplifying, and pursuing a minimalist lifestyle. 
+			   They’re busy and stressed, juggling work, family, home and more—with seemingly no end in sight. Is it any wonder that they’re craving simplicity? 
+               I know the feeling because I’ve been there. A decade ago I was a workaholic and shopaholic, drowning in a sea of too many responsibilities. I knew there had 
+			   to be a better way to live but I didn’t know how or where to begin. </span></p>
+               <button onclick="myFunction()" id="myBtn">Read more</button>
             </article>
             
             <article class="article-recent">
                <div class="article-recent-main">
                   <h2 class="article-title">Keeping cooking simple</h2>
-                  <p class="article-body">Food is a very important part of everyone's life. If you want to be healthy, you have to eat healthy. One of the easiest way to do that is to keep your cooking nice and simple.</p>
-                  <a href="#" class="article-read-more">CONTINUE READING</a>
+                  <p>Food is a very important part of everyone's life. If you want to be healthy, you have to eat healthy. One of the easiest way to do that is to keep your cooking nice and simple.</p>
+               
+                 
                </div>
                
                <div class="article-recent-secondary">
                   <img src="img/food.jpg" alt="" class="article-image">
-                  <p class="article-info">July 19, 2019 | 3 comments</p>
+                  
                </div>
             </article>
             
             <article class="article-recent">
                <div class="article-recent-main">
                   <h2 class="article-title">Simplicity and work</h2>
-                  <p class="article-body">Work is often a major source of stress. People get frustrated, it ruins their relationship with others and it leads to burnout. By keeping your work life as simple as possible, it will help balance everything out.</p>
-                  <a href="#" class="article-read-more">CONTINUE READING</a>
+                  <p >Work is often a major source of stress. People get frustrated, it ruins their relationship with others and it leads to burnout.
+				  By keeping your work life as simple as possible, it will help balance everything out.</p>
                </div>
                
                <div class="article-recent-secondary">
                   <img src="img/work.jpg" alt="" class="article-image">
-                  <p class="article-info">July 12, 2019 | 3 comments</p>
+                  
                </div>
             </article>
             
             <article class="article-recent">
                <div class="article-recent-main">
-                  <h2 class="article-title">Simple decoration</h2>
-                  <p class="article-body">A home isn't a home untill you've decorated a little. People either don't decorate, or they go overboard and it doesn't have the impact they were hoping for. Staying simple will help draw the eye where you want it to and make things pop like never before.</p>
-                  <a href="#" class="article-read-more">CONTINUE READING</a>
+                  <h2 >Simple decoration</h2>
+                  <p>A home isn't a home untill you've decorated a little. People either don't decorate, or they go overboard and it doesn't have the
+				  impact they were hoping for. Staying simple will help draw the eye where you want it to and make things pop like never before.</p>
+                 
                </div>
                
                <div class="article-recent-secondary">
                   <img src="img/deco.jpg" alt="" class="article-image">
-                  <p class="article-info">July 3, 2019 | 3 comment</p>
+                 
                </div>
             </article>
-            
          </main>
          
          <aside class="sidebar">
