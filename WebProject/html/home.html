@@ -1,3 +1,9 @@
+<?php
+session_start();
+
+
+if(isset($_SESSION['id']) && isset($_SESSION['user_name'])){
+?>
 <!DOCTYPE html>
 <html>
    <head>
@@ -34,7 +40,7 @@
       <div class="container container-flex">
          
          <main role="main">
-            
+                  <h1>Hello, <?php echo $_SESSION['user_name'];?><a href="logout.php">Logout</a></h1>
             <article class="article-featured">
                <h2 class="article-title">Finding simplicity in life</h2>
                <img src="img/life.jpg" alt="greenery pic" class="article-image">
@@ -138,3 +144,8 @@
       </footer>
    </body>
 </html>
+<?php
+}else{
+ header("Location:index.php");
+	 exit();
+}
