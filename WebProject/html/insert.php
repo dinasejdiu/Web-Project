@@ -55,11 +55,17 @@ else
 	echo "All field are required";
 	die();
 }
-	
-
-
-
-
-
 
 ?>
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<style>
+a:link{
+text-decoration:none;}
+</style>
+<body>
+<h4><a href="contact-us.html">Go back to the page...</h4>
+</body>
+</html>
