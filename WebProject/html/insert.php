@@ -39,7 +39,7 @@ if(!empty($userName)||!empty($email)||!empty($phone)||!empty($message))
 			$stmt=$conn->prepare($INSERT);
 			$stmt->bind_param("ssis",$userName,$email,$phone,$message);
 			$stmt->execute();
-			echo "New record is inserted successfully";
+			echo "New record is inserted successfully. Thank you!";
 		}
 		else
 		{
@@ -55,6 +55,12 @@ else
 	echo "All field are required";
 	die();
 }
+	
+
+
+
+
+
 
 ?>
 <!DOCTYPE html>
