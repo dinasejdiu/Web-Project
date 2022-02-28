@@ -45,9 +45,8 @@ padding:2px;
 	max-width: 600px;
 	background: #f1f1f1;
 	position: left-side;
-	padding:30px 40px;
+	padding:50px 100px;
 	box-sizing: border-box;
-	box-size:100%;
 	border-radius: 8px;
 	text-align: left;
 	box-shadow: 0 0 20px #000000b3;
@@ -91,13 +90,18 @@ input[type=submit] {
 	cursor: pointer;
 	margin-top: 8px;
 	width:100%;
+
 }
-	   a:link
+a:link
 {
 text-decoration:none;
 }
 </style>
   </head>
+  
+  
+  
+  
       <header>
          <div class="container container-nav">
             <div class="site-title">
@@ -122,44 +126,51 @@ text-decoration:none;
 		
       <div class="container container-flex">
          
+		 
+		 
+		 
          <main role="main">
-           		<form action="insert.php" method="POST">
-		<div class="contact-form">
+           	<form action="insert.php" method="POST">
+			<div class="contact-form">
 			<i class="glyphicon glyphicon-envelope"></i>
 
 			<h1>Contact Us</h1>
 			<div class="txtb">
-				<label>User Name :</label>
-				<input type="text" placeholder="username" 
+				<label>Username :</label>
+				<input type="text" placeholder="username"  name="userName"
 				       id="inputName" pattern="[A-Za-z\d\.]{3,20}" required>
 			</div>
 
 			<div class="txtb">
 				<label>Email :</label>
 				<input type="email"  placeholder="email" 
-				id="inputEmail"  required >
+				id="inputEmail" name="email"  required >
 				
 			</div>
 
 			<div class="txtb">
 				<label>Phone Number :</label>
-				<input type="tel" name="" 
+				<input type="tel" name="phone" 
 				value="" placeholder="phone"/>
 			</div>
 
 <div class="txtb">
 				<label>Message :</label>
-				<textarea > </textarea>
+				<textarea name="message"> </textarea>
 	
 			</div>
 
 	<input type="submit" value="Submit " />
-</div>
-			
-</form>
-         
+</div>	
+</form>  
          </main>
          
+		 
+		 
+		 
+		
+		 
+		 
        <aside class="sidebar">
             
             <div class="sidebar-widget">
