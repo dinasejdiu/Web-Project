@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 27, 2022 at 10:40 PM
+-- Generation Time: Feb 27, 2022 at 10:42 PM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 7.3.33
 
@@ -18,34 +18,38 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `datab`
+-- Database: `test`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `forma`
+-- Table structure for table `users`
 --
 
-CREATE TABLE `forma` (
-  `id` varchar(50) NOT NULL,
-  `userName` varchar(50) NOT NULL,
-  `email` varchar(50) NOT NULL,
-  `phone` bigint(10) NOT NULL,
-  `message` varchar(60) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+CREATE TABLE `users` (
+  `ID` int(11) NOT NULL,
+  `user_name` varchar(50) NOT NULL,
+  `password` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `forma`
+-- Dumping data for table `users`
 --
 
-INSERT INTO `forma` (`id`, `userName`, `email`, `phone`, `message`) VALUES
-('', 'albulena', 'albulena1@gmail.com', 49312563, 'I like your page\r\n '),
-('', 'fortuna', 'fortunagashii@gmail.com', 4455233, ' I like your page'),
-('', 'fortuna', 'fortunaa@hotmail.com', 493333223, ' shume bukur'),
-('', 'fortuna', 'fg63314@ubt-uni.net', 493333223, ' I really enjoy your page!\r\n'),
-('', 'fortuna', 'albulena1@outlook.com', 493333223, ' I don\'t like your page!'),
-('', 'fortuna', 'fortunaa1@hotmail.com', 493333223, ' I really like your page');
+INSERT INTO `users` (`ID`, `user_name`, `password`) VALUES
+(1, 'fortuna', '123'),
+(2, 'alba', '456');
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`ID`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
