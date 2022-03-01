@@ -100,6 +100,15 @@ text-decoration:none;
   </head>
   
   
+   <?php
+  function isValidEmail($imella)
+{
+    return preg_match('/\A[a-z0-9]+([-._][a-z0-9]+)*@([a-z0-9]+(-[a-z0-9]+)*\.)+[a-z]{2,4}\z/', $imella)
+        && preg_match('/^(?=.{1,64}@.{4,64}$)(?=.{6,100}$).*/', $imella);
+}
+?>
+
+  
   
   
       <header>
@@ -143,7 +152,7 @@ text-decoration:none;
 
 			<div class="txtb">
 				<label>Email :</label>
-				<input type="email"  placeholder="email" 
+				<input type="email"  id="imella" placeholder="email" 
 				id="inputEmail" name="email"  required >
 				
 			</div>
