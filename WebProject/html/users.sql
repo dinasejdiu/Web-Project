@@ -39,8 +39,8 @@ CREATE TABLE `users` (
 
 INSERT INTO `users` (`ID`, `user_name`, `password`) VALUES
 (1, 'fortuna', '123'),
-(2, 'alba', '456');
-
+(2, 'alba', '456'),
+(3, 'Erodina', 'Sejdiu123');
 --
 -- Indexes for dumped tables
 --
